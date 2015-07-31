@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="nvidia_st8_oss"
+           fetch="git://nv-tegra.nvidia.com/"
+           review="git-master.nvidia.com/r"
+           revision="rel-st8-l-r3-partner" />
+
+  <remote  name="nvidia"
+           revision="jtk1-android-l"
+           fetch=".." />
+
+  <default revision="rel-st8-l-r3-partner"
+           remote="nvidia_st8_oss" />
+
+
+  <project path="build" name="android/platform/build" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="abi/cpp" name="android/platform/abi/cpp" />
+  <project path="art" name="android/platform/art" />
+  <project path="bionic" name="android/platform/bionic" />
+  <project path="bootable/bootloader/legacy" name="android/platform/bootable/bootloader/legacy" />
+  <project path="bootable/recovery" name="android/platform/bootable/recovery" revision="rel-st8-l-r3" />
+  <project path="cts" name="android/platform/cts" />
+  <project path="dalvik" name="android/platform/dalvik" />
+  <project path="development" name="android/platform/development" />
+  <project path="developers/build" name="android/platform/developers/build" />
+  <project path="device/common" name="android/device/common" />
+  <project path="device/generic/arm64" name="android/device/generic/arm64" />
+  <project path="device/generic/armv7-a-neon" name="android/device/generic/armv7-a-neon" />
+  <project path="device/generic/common" name="android/device/generic/common" />
+  <project path="device/generic/goldfish" name="android/device/generic/goldfish" />
+  <project path="device/generic/mini-emulator-arm64" name="android/device/generic/mini-emulator-arm64" />
+  <project path="device/generic/mini-emulator-armv7-a-neon" name="android/device/generic/mini-emulator-armv7-a-neon" />
+  <project path="device/google/atv" name="android/device/google/atv" />
+  <project path="device/sample" name="android/device/sample" />
+  <project path="external/aac" name="android/platform/external/aac" />
+  <project path="external/android-clat" name="android/platform/external/android-clat" />
+  <project path="external/ant-glob" name="android/platform/external/ant-glob" />
+  <project path="external/antlr" name="android/platform/external/antlr" />
+  <project path="external/apache-harmony" name="android/platform/external/apache-harmony" />
+  <project path="external/apache-http" name="android/platform/external/apache-http" />
+  <project path="external/apache-qp" name="android/platform/external/apache-qp" />
+  <project path="external/apache-xml" name="android/platform/external/apache-xml" />
+  <project path="external/arduino" name="android/platform/external/arduino" />
+  <project path="external/bison" name="android/platform/external/bison" revision="rel-st8-l-r3" />
+  <project path="external/blktrace" name="android/platform/external/blktrace" revision="rel-st8-l-r3" />
+  <project path="external/bluetooth/bluedroid" name="android/platform/external/bluetooth/bluedroid" />
+  <project path="external/bouncycastle" name="android/platform/external/bouncycastle" />
+  <project path="external/bsdiff" name="android/platform/external/bsdiff" />
+  <project path="external/bzip2" name="android/platform/external/bzip2" />
+  <project path="external/ceres-solver" name="android/platform/external/ceres-solver" />
+  <project path="external/checkpolicy" name="android/platform/external/checkpolicy" />
+  <project path="external/chromium-libpac" name="android/platform/external/chromium-libpac" />
+  <project path="external/chromium-trace" name="android/platform/external/chromium-trace" />
+  <project path="external/chromium_org" name="android/platform/external/chromium_org" />
+  <project path="external/chromium_org/sdch/open-vcdiff" name="android/platform/external/chromium_org/sdch/open-vcdiff" />
+  <project path="external/chromium_org/testing/gtest" name="android/platform/external/chromium_org/testing/gtest" />
+  <project path="external/chromium_org/third_party/WebKit" name="android/platform/external/chromium_org/third_party/WebKit" />
+  <project path="external/chromium_org/third_party/angle" name="android/platform/external/chromium_org/third_party/angle" />
+  <project path="external/chromium_org/third_party/brotli/src" name="android/platform/external/chromium_org/third_party/brotli/src" />
+  <project path="external/chromium_org/third_party/eyesfree/src/android/java/src/com/googlecode/eyesfree/braille" name="android/platform/external/chromium_org/third_party/eyesfree/src/android/java/src/com/googlecode/eyesfree/braille" />
+  <project path="external/chromium_org/third_party/freetype" name="android/platform/external/chromium_org/third_party/freetype" />
+  <project path="external/chromium_org/third_party/icu" name="android/platform/external/chromium_org/third_party/icu" />
+  <project path="external/chromium_org/third_party/leveldatabase/src" name="android/platform/external/chromium_org/third_party/leveldatabase/src" />
+  <project path="external/chromium_org/third_party/libaddressinput/src" name="android/platform/external/chromium_org/third_party/libaddressinput/src" />
+  <project path="external/chromium_org/third_party/libjingle/source/talk" name="android/platform/external/chromium_org/third_party/libjingle/source/talk" />
+  <project path="external/chromium_org/third_party/libjpeg_turbo" name="android/platform/external/chromium_org/third_party/libjpeg_turbo" />
+  <project path="external/chromium_org/third_party/libphonenumber/src/phonenumbers" name="android/platform/external/chromium_org/third_party/libphonenumber/src/phonenumbers" />
+  <project path="external/chromium_org/third_party/libphonenumber/src/resources" name="android/platform/external/chromium_org/third_party/libphonenumber/src/resources" />
+  <project path="external/chromium_org/third_party/libsrtp" name="android/platform/external/chromium_org/third_party/libsrtp" />
+  <project path="external/chromium_org/third_party/libvpx" name="android/platform/external/chromium_org/third_party/libvpx" />
+  <project path="external/chromium_org/third_party/libyuv" name="android/platform/external/chromium_org/third_party/libyuv" />
+  <project path="external/chromium_org/third_party/mesa/src" name="android/platform/external/chromium_org/third_party/mesa/src" />
+  <project path="external/chromium_org/third_party/openmax_dl" name="android/platform/external/chromium_org/third_party/openmax_dl" />
+  <project path="external/chromium_org/third_party/openssl" name="android/platform/external/chromium_org/third_party/openssl" />
+  <project path="external/chromium_org/third_party/opus/src" name="android/platform/external/chromium_org/third_party/opus/src" />
+  <project path="external/chromium_org/third_party/ots" name="android/platform/external/chromium_org/third_party/ots" />
+  <project path="external/chromium_org/third_party/sfntly/cpp/src" name="android/platform/external/chromium_org/third_party/sfntly/cpp/src" />
+  <project path="external/chromium_org/third_party/skia" name="android/platform/external/chromium_org/third_party/skia" />
+  <project path="external/chromium_org/third_party/smhasher/src" name="android/platform/external/chromium_org/third_party/smhasher/src" />
+  <project path="external/chromium_org/third_party/usrsctp/usrsctplib" name="android/platform/external/chromium_org/third_party/usrsctp/usrsctplib" />
+  <project path="external/chromium_org/third_party/webrtc" name="android/platform/external/chromium_org/third_party/webrtc" />
+  <project path="external/chromium_org/third_party/yasm/source/patched-yasm" name="android/platform/external/chromium_org/third_party/yasm/source/patched-yasm" revision="rel-st8-l-r3" />
+  <project path="external/chromium_org/tools/grit" name="android/platform/external/chromium_org/tools/grit" />
+  <project path="external/chromium_org/tools/gyp" name="android/platform/external/chromium_org/tools/gyp" />
+  <project path="external/chromium_org/v8" name="android/platform/external/chromium_org/v8" />
+  <project path="external/clang" name="android/platform/external/clang" />
+  <project path="external/cmockery" name="android/platform/external/cmockery" />
+  <project path="external/compiler-rt" name="android/platform/external/compiler-rt" />
+  <project path="external/conscrypt" name="android/platform/external/conscrypt" />
+  <project path="external/deqp" name="android/platform/external/deqp" />
+  <project path="external/dexmaker" name="android/platform/external/dexmaker" />
+  <project path="external/dhcpcd" name="android/platform/external/dhcpcd" />
+  <project path="external/dnsmasq" name="android/platform/external/dnsmasq" revision="rel-st8-l-r3" />
+  <project path="external/doclava" name="android/platform/external/doclava" />
+  <project path="external/droiddriver" name="android/platform/external/droiddriver" />
+  <project path="external/e2fsprogs" name="android/platform/external/e2fsprogs" />
+  <project path="external/easymock" name="android/platform/external/easymock" />
+  <project path="external/eclipse-basebuilder" name="android/platform/external/eclipse-basebuilder" />
+  <project path="external/eclipse-windowbuilder" name="android/platform/external/eclipse-windowbuilder" />
+  <project path="external/eigen" name="android/platform/external/eigen" />
+  <project path="external/elfutils" name="android/platform/external/elfutils" />
+  <project path="external/emma" name="android/platform/external/emma" />
+  <project path="external/esd" name="android/platform/external/esd" />
+  <project path="external/expat" name="android/platform/external/expat" />
+  <project path="external/eyes-free" name="android/platform/external/eyes-free" />
+  <project path="external/f2fs-tools" name="android/platform/external/f2fs-tools" revision="rel-st8-l-r3" />
+  <project path="external/fdlibm" name="android/platform/external/fdlibm" />
+  <project path="external/fio" name="android/platform/external/fio" revision="rel-st8-l-r3" />
+  <project path="external/flac" name="android/platform/external/flac" />
+  <project path="external/fonttools" name="android/platform/external/fonttools" />
+  <project path="external/freetype" name="android/platform/external/freetype" />
+  <project path="external/fsck_msdos" name="android/platform/external/fsck_msdos" />
+  <project path="external/gcc-demangle" name="android/platform/external/gcc-demangle" revision="rel-st8-l-r3" />
+  <project path="external/genext2fs" name="android/platform/external/genext2fs" revision="rel-st8-l-r3" />
+  <project path="external/glide" name="android/platform/external/glide" />
+  <project path="external/giflib" name="android/platform/external/giflib" />
+  <project path="external/google-diff-match-patch" name="android/platform/external/google-diff-match-patch" />
+  <project path="external/google-fonts/coming-soon" name="android/platform/external/google-fonts/coming-soon" />
+  <project path="external/google-fonts/dancing-script" name="android/platform/external/google-fonts/dancing-script" />
+  <project path="external/google-fonts/carrois-gothic-sc" name="android/platform/external/google-fonts/carrois-gothic-sc" />
+  <project path="external/google-fonts/cutive-mono" name="android/platform/external/google-fonts/cutive-mono" />
+  <project path="external/google-tv-pairing-protocol" name="android/platform/external/google-tv-pairing-protocol" />
+  <project path="external/gtest" name="android/platform/external/gtest" />
+  <project path="external/guava" name="android/platform/external/guava" />
+  <project path="external/hamcrest" name="android/platform/external/hamcrest" />
+  <project path="external/harfbuzz_ng" name="android/platform/external/harfbuzz_ng" />
+  <project path="external/icu" name="android/platform/external/icu" />
+  <project path="external/iproute2" name="android/platform/external/iproute2" revision="rel-st8-l-r3" />
+  <project path="external/ipsec-tools" name="android/platform/external/ipsec-tools" />
+  <project path="external/iptables" name="android/platform/external/iptables" />
+  <project path="external/iputils" name="android/platform/external/iputils" />
+  <project path="external/jack" name="android/platform/external/jack" />
+  <project path="external/jarjar" name="android/platform/external/jarjar" />
+  <project path="external/javasqlite" name="android/platform/external/javasqlite" />
+  <project path="external/javassist" name="android/platform/external/javassist" />
+  <project path="external/jdiff" name="android/platform/external/jdiff" revision="rel-st8-l-r3" />
+  <project path="external/jemalloc" name="android/platform/external/jemalloc" />
+  <project path="external/jhead" name="android/platform/external/jhead" />
+  <project path="external/jmdns" name="android/platform/external/jmdns" />
+  <project path="external/jpeg" name="android/platform/external/jpeg" />
+  <project path="external/jsilver" name="android/platform/external/jsilver" />
+  <project path="external/jsmn" name="android/platform/external/jsmn" />
+  <project path="external/jsoncpp" name="android/platform/external/jsoncpp" />
+  <project path="external/jsr305" name="android/platform/external/jsr305" />
+  <project path="external/junit" name="android/platform/external/junit" />
+  <project path="external/ksoap2" name="android/platform/external/ksoap2" />
+  <project path="external/kernel-headers" name="android/platform/external/kernel-headers" revision="rel-st8-l-r3" />
+  <project path="external/libcap-ng" name="android/platform/external/libcap-ng" revision="rel-st8-l-r3" />
+  <project path="external/libcxx" name="android/platform/external/libcxx" />
+  <project path="external/libcxxabi" name="android/platform/external/libcxxabi" />
+  <project path="external/libedit" name="android/platform/external/libedit" />
+  <project path="external/libexif" name="android/platform/external/libexif" revision="rel-st8-l-r3" />
+  <project path="external/libhevc" name="android/platform/external/libhevc" />
+  <project path="external/libgsm" name="android/platform/external/libgsm" />
+  <project path="external/liblzf" name="android/platform/external/liblzf" />
+  <project path="external/libmtp" name="android/platform/external/libmtp" />
+  <project path="external/libnfc-nci" name="android/platform/external/libnfc-nci" />
+  <project path="external/libnfc-nxp" name="android/platform/external/libnfc-nxp" />
+  <project path="external/libnl" name="android/platform/external/libnl" revision="rel-st8-l-r3" />
+  <project path="external/libogg" name="android/platform/external/libogg" />
+  <project path="external/libopus" name="android/platform/external/libopus" />
+  <project path="external/libpcap" name="android/platform/external/libpcap" />
+  <project path="external/libphonenumber" name="android/platform/external/libphonenumber" />
+  <project path="external/libpng" name="android/platform/external/libpng" />
+  <project path="external/libseccomp-helper" name="android/platform/external/libseccomp-helper" />
+  <project path="external/libselinux" name="android/platform/external/libselinux" />
+  <project path="external/libsepol" name="android/platform/external/libsepol" />
+  <project path="external/libssh2" name="android/platform/external/libssh2" />
+  <project path="external/libunwind" name="android/platform/external/libunwind" />
+  <project path="external/libusb" name="android/platform/external/libusb" />
+  <project path="external/libusb-compat" name="android/platform/external/libusb-compat" />
+  <project path="external/libutf" name="android/platform/external/libutf" />
+  <project path="external/libvorbis" name="android/platform/external/libvorbis" />
+  <project path="external/libvpx" name="android/platform/external/libvpx" revision="rel-st8-l-r3" />
+  <project path="external/libxml2" name="android/platform/external/libxml2" />
+  <project path="external/libyuv" name="android/platform/external/libyuv" />
+  <project path="external/linux-tools-perf" name="android/platform/external/linux-tools-perf" />
+  <project path="external/littlemock" name="android/platform/external/littlemock" />
+  <project path="external/lldb" name="android/platform/external/lldb" />
+  <project path="external/llvm" name="android/platform/external/llvm" />
+  <project path="external/ltrace" name="android/platform/external/ltrace" revision="rel-st8-l-r3" />
+  <project path="external/lzma" name="android/platform/external/lzma" />
+  <project path="external/markdown" name="android/platform/external/markdown" />
+  <project path="external/mdnsresponder" name="android/platform/external/mdnsresponder" />
+  <project path="external/mesa3d" name="android/platform/external/mesa3d" />
+  <project path="external/messageformat" name="android/platform/external/messageformat" />
+  <project path="external/mksh" name="android/platform/external/mksh" />
+  <project path="external/mockito" name="android/platform/external/mockito" />
+  <project path="external/mockwebserver" name="android/platform/external/mockwebserver" />
+  <project path="external/mp4parser" name="android/platform/external/mp4parser" />
+  <project path="external/mtpd" name="android/platform/external/mtpd" />
+  <project path="external/nanohttpd" name="android/platform/external/nanohttpd" />
+  <project path="external/nanopb-c" name="android/platform/external/nanopb-c" />
+  <project path="external/naver-fonts" name="android/platform/external/naver-fonts" />
+  <project path="external/netcat" name="android/platform/external/netcat" />
+  <project path="external/netperf" name="android/platform/external/netperf" />
+  <project path="external/neven" name="android/platform/external/neven" />
+  <project path="external/nfacct" name="android/platform/external/nfacct" revision="rel-st8-l-r3" />
+  <project path="external/nist-pkits" name="android/platform/external/nist-pkits" />
+  <project path="external/nist-sip" name="android/platform/external/nist-sip" />
+  <project path="external/noto-fonts" name="android/platform/external/noto-fonts" />
+  <project path="external/oauth" name="android/platform/external/oauth" />
+  <project path="external/objenesis" name="android/platform/external/objenesis" />
+  <project path="external/okhttp" name="android/platform/external/okhttp" />
+  <project path="external/opencv" name="android/platform/external/opencv" />
+  <project path="external/openssl" name="android/platform/external/openssl" />
+  <project path="external/oprofile" name="android/platform/external/oprofile" revision="rel-st8-l-r3" />
+  <project path="external/owasp/sanitizer" name="android/platform/external/owasp/sanitizer" />
+  <project path="external/pcre" name="android/platform/external/pcre" />
+  <project path="external/pdfium" name="android/platform/external/pdfium" />
+  <project path="external/pixman" name="android/platform/external/pixman" />
+  <project path="external/ppp" name="android/platform/external/ppp" />
+  <project path="external/proguard" name="android/platform/external/proguard"  />
+  <project path="external/protobuf" name="android/platform/external/protobuf" />
+  <project path="external/qemu" name="android/platform/external/qemu" revision="rel-st8-l-r3" />
+  <project path="external/qemu-pc-bios" name="android/platform/external/qemu-pc-bios" />
+  <project path="external/regex-re2" name="android/platform/external/regex-re2" />
+  <project path="external/replicaisland" name="android/platform/external/replicaisland" />
+  <project path="external/robolectric" name="android/platform/external/robolectric" />
+  <project path="external/safe-iop" name="android/platform/external/safe-iop" />
+  <project path="external/scrypt" name="android/platform/external/scrypt" />
+  <project path="external/sepolicy" name="android/platform/external/sepolicy" />
+  <project path="external/sfntly" name="android/platform/external/sfntly" />
+  <project path="external/skia" name="android/platform/external/skia" />
+  <project path="external/smack" name="android/platform/external/smack" />
+  <project path="external/smali" name="android/platform/external/smali" />
+  <project path="external/sonivox" name="android/platform/external/sonivox" />
+  <project path="external/speex" name="android/platform/external/speex" />
+  <project path="external/sqlite" name="android/platform/external/sqlite" />
+  <project path="external/srec" name="android/platform/external/srec" />
+  <project path="external/srtp" name="android/platform/external/srtp" />
+  <project path="external/stlport" name="android/platform/external/stlport" />
+  <project path="external/strace" name="android/platform/external/strace" />
+  <project path="external/stressapptest" name="android/platform/external/stressapptest" />
+  <project path="external/svox" name="android/platform/external/svox" />
+  <project path="external/tagsoup" name="android/platform/external/tagsoup" />
+  <project path="external/tcpdump" name="android/platform/external/tcpdump" />
+  <project path="external/timezonepicker-support" name="android/platform/external/timezonepicker-support" />
+  <project path="external/tinyalsa" name="android/platform/external/tinyalsa" />
+  <project path="external/tinycompress" name="android/platform/external/tinycompress" />
+  <project path="external/tinyxml" name="android/platform/external/tinyxml" />
+  <project path="external/tinyxml2" name="android/platform/external/tinyxml2" />
+  <project path="external/tremolo" name="android/platform/external/tremolo" />
+  <project path="external/valgrind" name="android/platform/external/valgrind" revision="rel-st8-l-r3" />
+  <project path="external/vixl" name="android/platform/external/vixl" />
+  <project path="external/webp" name="android/platform/external/webp" />
+  <project path="external/webrtc" name="android/platform/external/webrtc" />
+  <project path="external/wpa_supplicant_8" name="android/platform/external/wpa_supplicant_8" />
+  <project path="external/xmlwriter" name="android/platform/external/xmlwriter" />
+  <project path="external/xmp_toolkit" name="android/platform/external/xmp_toolkit" />
+  <project path="external/yaffs2" name="android/platform/external/yaffs2" revision="rel-st8-l-r3" />
+  <project path="external/zlib" name="android/platform/external/zlib" />
+  <project path="external/zopfli" name="android/platform/external/zopfli" />
+  <project path="external/zxing" name="android/platform/external/zxing" />
+  <project path="frameworks/av" name="android/platform/frameworks/av" />
+  <project path="frameworks/compile/libbcc" name="android/platform/frameworks/compile/libbcc" />
+  <project path="frameworks/compile/mclinker" name="android/platform/frameworks/compile/mclinker" />
+  <project path="frameworks/compile/slang" name="android/platform/frameworks/compile/slang" />
+  <project path="frameworks/ex" name="android/platform/frameworks/ex" />
+  <project path="frameworks/mff" name="android/platform/frameworks/mff" />
+  <project path="frameworks/minikin" name="android/platform/frameworks/minikin" />
+  <project path="frameworks/ml" name="android/platform/frameworks/ml" />
+  <project path="frameworks/multidex" name="android/platform/frameworks/multidex" />
+  <project path="frameworks/native" name="android/platform/frameworks/native" />
+  <project path="frameworks/opt/bitmap" name="android/platform/frameworks/opt/bitmap" />
+  <project path="frameworks/opt/bluetooth" name="android/platform/frameworks/opt/bluetooth" />
+  <project path="frameworks/opt/calendar" name="android/platform/frameworks/opt/calendar" />
+  <project path="frameworks/opt/carddav" name="android/platform/frameworks/opt/carddav" />
+  <project path="frameworks/opt/chips" name="android/platform/frameworks/opt/chips" />
+  <project path="frameworks/opt/colorpicker" name="android/platform/frameworks/opt/colorpicker" />
+  <project path="frameworks/opt/datetimepicker" name="android/platform/frameworks/opt/datetimepicker" />
+  <project path="frameworks/opt/emoji" name="android/platform/frameworks/opt/emoji" />
+  <project path="frameworks/opt/inputmethodcommon" name="android/platform/frameworks/opt/inputmethodcommon" />
+  <project path="frameworks/opt/mms" name="android/platform/frameworks/opt/mms" />
+  <project path="frameworks/opt/net/ims" name="android/platform/frameworks/opt/net/ims" />
+  <project path="frameworks/opt/net/voip" name="android/platform/frameworks/opt/net/voip" />
+  <project path="frameworks/opt/net/ethernet" name="android/platform/frameworks/opt/net/ethernet" />
+  <project path="frameworks/opt/photoviewer" name="android/platform/frameworks/opt/photoviewer" />
+  <project path="frameworks/opt/setupwizard" name="android/platform/frameworks/opt/setupwizard" />
+  <project path="frameworks/opt/telephony" name="android/platform/frameworks/opt/telephony" />
+  <project path="frameworks/opt/timezonepicker" name="android/platform/frameworks/opt/timezonepicker" />
+  <project path="frameworks/opt/vcard" name="android/platform/frameworks/opt/vcard" />
+  <project path="frameworks/opt/widget" name="android/platform/frameworks/opt/widget" />
+  <project path="frameworks/rs" name="android/platform/frameworks/rs" />
+  <project path="frameworks/support" name="android/platform/frameworks/support" />
+  <project path="frameworks/testing" name="android/platform/frameworks/testing" />
+  <project path="frameworks/volley" name="android/platform/frameworks/volley" />
+  <project path="frameworks/webview" name="android/platform/frameworks/webview" />
+  <project path="frameworks/wilhelm" name="android/platform/frameworks/wilhelm" />
+  <project path="hardware/akm" name="android/platform/hardware/akm" />
+  <project path="hardware/broadcom/libbt" name="android/platform/hardware/broadcom/libbt" />
+  <project path="hardware/broadcom/wlan" name="android/platform/hardware/broadcom/wlan" />
+  <project path="hardware/invensense" name="android/platform/hardware/invensense"  />
+  <project path="hardware/libhardware" name="android/platform/hardware/libhardware" />
+  <project path="hardware/libhardware_legacy" name="android/platform/hardware/libhardware_legacy" />
+  <project path="hardware/nvidia/audio" name="android/platform/hardware/nvidia/audio"  />
+  <project path="hardware/nvidia/tegra124" name="android/platform/hardware/nvidia/tegra124"  />
+  <project path="hardware/ril" name="android/platform/hardware/ril" />
+  <project path="libcore" name="android/platform/libcore" />
+  <project path="libnativehelper" name="android/platform/libnativehelper" />
+  <project path="ndk" name="android/platform/ndk" revision="rel-st8-l-r3" />
+  <project path="packages/apps/BasicSmsReceiver" name="android/platform/packages/apps/BasicSmsReceiver" />
+  <project path="packages/apps/Bluetooth" name="android/platform/packages/apps/Bluetooth" />
+  <project path="packages/apps/Browser" name="android/platform/packages/apps/Browser" />
+  <project path="packages/apps/Calculator" name="android/platform/packages/apps/Calculator" />
+  <project path="packages/apps/Calendar" name="android/platform/packages/apps/Calendar" />
+  <project path="packages/apps/Camera" name="android/platform/packages/apps/Camera" />
+  <project path="packages/apps/Camera2" name="android/platform/packages/apps/Camera2" />
+  <project path="packages/apps/CellBroadcastReceiver" name="android/platform/packages/apps/CellBroadcastReceiver" />
+  <project path="packages/apps/CertInstaller" name="android/platform/packages/apps/CertInstaller" />
+  <project path="packages/apps/Contacts" name="android/platform/packages/apps/Contacts" />
+  <project path="packages/apps/ContactsCommon" name="android/platform/packages/apps/ContactsCommon" />
+  <project path="packages/apps/DeskClock" name="android/platform/packages/apps/DeskClock" />
+  <project path="packages/apps/Dialer" name="android/platform/packages/apps/Dialer" />
+  <project path="packages/apps/Email" name="android/platform/packages/apps/Email" />
+  <project path="packages/apps/Exchange" name="android/platform/packages/apps/Exchange" />
+  <project path="packages/apps/Gallery" name="android/platform/packages/apps/Gallery" />
+  <project path="packages/apps/Gallery2" name="android/platform/packages/apps/Gallery2" />
+  <project path="packages/apps/HTMLViewer" name="android/platform/packages/apps/HTMLViewer" />
+  <project path="packages/apps/InCallUI" name="android/platform/packages/apps/InCallUI" />
+  <project path="packages/apps/KeyChain" name="android/platform/packages/apps/KeyChain" />
+  <project path="packages/apps/Launcher2" name="android/platform/packages/apps/Launcher2" />
+  <project path="packages/apps/Launcher3" name="android/platform/packages/apps/Launcher3" />
+  <project path="packages/apps/LegacyCamera" name="android/platform/packages/apps/LegacyCamera" />
+  <project path="packages/apps/ManagedProvisioning" name="android/platform/packages/apps/ManagedProvisioning" />
+  <project path="packages/apps/Mms" name="android/platform/packages/apps/Mms" />
+  <project path="packages/apps/Music" name="android/platform/packages/apps/Music" />
+  <project path="packages/apps/MusicFX" name="android/platform/packages/apps/MusicFX" />
+  <project path="packages/apps/Nfc" name="android/platform/packages/apps/Nfc" />
+  <project path="packages/apps/OneTimeInitializer" name="android/platform/packages/apps/OneTimeInitializer" />
+  <project path="packages/apps/PackageInstaller" name="android/platform/packages/apps/PackageInstaller" />
+  <project path="packages/apps/Phone" name="android/platform/packages/apps/Phone" />
+  <project path="packages/apps/PhoneCommon" name="android/platform/packages/apps/PhoneCommon" />
+  <project path="packages/apps/Protips" name="android/platform/packages/apps/Protips" />
+  <project path="packages/apps/Provision" name="android/platform/packages/apps/Provision" />
+  <project path="packages/apps/QuickSearchBox" name="android/platform/packages/apps/QuickSearchBox" />
+  <project path="packages/apps/Settings" name="android/platform/packages/apps/Settings" />
+  <project path="packages/apps/SmartCardService" name="android/platform/packages/apps/SmartCardService" />
+  <project path="packages/apps/SoundRecorder" name="android/platform/packages/apps/SoundRecorder" />
+  <project path="packages/apps/SpareParts" name="android/platform/packages/apps/SpareParts" />
+  <project path="packages/apps/SpeechRecorder" name="android/platform/packages/apps/SpeechRecorder" />
+  <project path="packages/apps/Stk" name="android/platform/packages/apps/Stk" />
+  <project path="packages/apps/Tag" name="android/platform/packages/apps/Tag" />
+  <project path="packages/apps/TvSettings" name="android/platform/packages/apps/TvSettings" />
+  <project path="packages/apps/UnifiedEmail" name="android/platform/packages/apps/UnifiedEmail" />
+  <project path="packages/apps/VoiceDialer" name="android/platform/packages/apps/VoiceDialer" />
+  <project path="packages/experimental" name="android/platform/packages/experimental" />
+  <project path="packages/inputmethods/LatinIME" name="android/platform/packages/inputmethods/LatinIME" />
+  <project path="packages/inputmethods/OpenWnn" name="android/platform/packages/inputmethods/OpenWnn" />
+  <project path="packages/providers/ApplicationsProvider" name="android/platform/packages/providers/ApplicationsProvider" />
+  <project path="packages/providers/CalendarProvider" name="android/platform/packages/providers/CalendarProvider" />
+  <project path="packages/providers/ContactsProvider" name="android/platform/packages/providers/ContactsProvider" />
+  <project path="packages/providers/DownloadProvider" name="android/platform/packages/providers/DownloadProvider" />
+  <project path="packages/providers/MediaProvider" name="android/platform/packages/providers/MediaProvider" />
+  <project path="packages/providers/PartnerBookmarksProvider" name="android/platform/packages/providers/PartnerBookmarksProvider" />
+  <project path="packages/providers/TelephonyProvider" name="android/platform/packages/providers/TelephonyProvider" />
+  <project path="packages/providers/TvProvider" name="android/platform/packages/providers/TvProvider" />
+  <project path="packages/providers/UserDictionaryProvider" name="android/platform/packages/providers/UserDictionaryProvider" />
+  <project path="packages/screensavers/Basic" name="android/platform/packages/screensavers/Basic" />
+  <project path="packages/screensavers/PhotoTable" name="android/platform/packages/screensavers/PhotoTable" />
+  <project path="packages/screensavers/WebView" name="android/platform/packages/screensavers/WebView" />
+  <project path="packages/services/Mms" name="android/platform/packages/services/Mms" />
+  <project path="packages/services/Telecomm" name="android/platform/packages/services/Telecomm" />
+  <project path="packages/services/Telephony" name="android/platform/packages/services/Telephony" />
+  <project path="packages/wallpapers/Basic" name="android/platform/packages/wallpapers/Basic" />
+  <project path="packages/wallpapers/Galaxy4" name="android/platform/packages/wallpapers/Galaxy4" />
+  <project path="packages/wallpapers/HoloSpiral" name="android/platform/packages/wallpapers/HoloSpiral" />
+  <project path="packages/wallpapers/LivePicker" name="android/platform/packages/wallpapers/LivePicker" />
+  <project path="packages/wallpapers/MagicSmoke" name="android/platform/packages/wallpapers/MagicSmoke" />
+  <project path="packages/wallpapers/MusicVisualization" name="android/platform/packages/wallpapers/MusicVisualization" />
+  <project path="packages/wallpapers/NoiseField" name="android/platform/packages/wallpapers/NoiseField" />
+  <project path="packages/wallpapers/PhaseBeam" name="android/platform/packages/wallpapers/PhaseBeam" />
+  <project path="pdk" name="android/platform/pdk" />
+  <project path="prebuilts/android-emulator" name="android/platform/prebuilts/android-emulator" />
+  <project path="prebuilts/clang/darwin-x86/3.1" name="android/platform/prebuilts/clang/darwin-x86/3.1" />
+  <project path="prebuilts/clang/darwin-x86/3.2" name="android/platform/prebuilts/clang/darwin-x86/3.2" />
+  <project path="prebuilts/clang/darwin-x86/arm/3.3" name="android/platform/prebuilts/clang/darwin-x86/arm/3.3" />
+  <project path="prebuilts/clang/darwin-x86/host/3.4" name="android/platform/prebuilts/clang/darwin-x86/host/3.4" />
+  <project path="prebuilts/clang/darwin-x86/host/3.5" name="android/platform/prebuilts/clang/darwin-x86/host/3.5" />
+  <project path="prebuilts/clang/darwin-x86/mips/3.3" name="android/platform/prebuilts/clang/darwin-x86/mips/3.3" />
+  <project path="prebuilts/clang/darwin-x86/x86/3.3" name="android/platform/prebuilts/clang/darwin-x86/x86/3.3" />
+  <project path="prebuilts/clang/linux-x86/3.1" name="android/platform/prebuilts/clang/linux-x86/3.1" />
+  <project path="prebuilts/clang/linux-x86/3.2" name="android/platform/prebuilts/clang/linux-x86/3.2" />
+  <project path="prebuilts/clang/linux-x86/arm/3.3" name="android/platform/prebuilts/clang/linux-x86/arm/3.3" />
+  <project path="prebuilts/clang/linux-x86/host/3.4" name="android/platform/prebuilts/clang/linux-x86/host/3.4" />
+  <project path="prebuilts/clang/linux-x86/host/3.5" name="android/platform/prebuilts/clang/linux-x86/host/3.5" />
+  <project path="prebuilts/clang/linux-x86/mips/3.3" name="android/platform/prebuilts/clang/linux-x86/mips/3.3" />
+  <project path="prebuilts/clang/linux-x86/x86/3.3" name="android/platform/prebuilts/clang/linux-x86/x86/3.3" />
+  <project path="prebuilts/devtools" name="android/platform/prebuilts/devtools" />
+  <project path="prebuilts/eclipse" name="android/platform/prebuilts/eclipse" />
+  <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.8" name="android/platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.8" />
+  <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="android/platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" name="android/platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.8" name="android/platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.8" />
+  <project path="prebuilts/gcc/darwin-x86/host/headers" name="android/platform/prebuilts/gcc/darwin-x86/host/headers" />
+  <project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="android/platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" name="android/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="android/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="android/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="android/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="android/platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="android/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="android/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="android/platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
+  <project path="prebuilts/gradle-plugin" name="android/platform/prebuilts/gradle-plugin" />
+  <project path="prebuilts/libs/libedit" name="android/platform/prebuilts/libs/libedit" />
+  <project path="prebuilts/maven_repo/android" name="android/platform/prebuilts/maven_repo/android" />
+  <project path="prebuilts/misc" name="android/platform/prebuilts/misc" revision="rel-st8-l-r3" />
+  <project path="prebuilts/ndk" name="android/platform/prebuilts/ndk" />
+  <project path="prebuilts/python/darwin-x86/2.7.5" name="android/platform/prebuilts/python/darwin-x86/2.7.5" />
+  <project path="prebuilts/python/linux-x86/2.7.5" name="android/platform/prebuilts/python/linux-x86/2.7.5" />
+  <project path="prebuilts/qemu-kernel" name="android/platform/prebuilts/qemu-kernel" />
+  <project path="prebuilts/sdk" name="android/platform/prebuilts/sdk" />
+  <project path="prebuilts/tools" name="android/platform/prebuilts/tools" revision="rel-st8-l-r3" />
+  <project path="sdk" name="android/platform/sdk" />
+  <project path="system/core" name="android/platform/system/core" />
+  <project path="system/extras" name="android/platform/system/extras" />
+  <project path="system/keymaster" name="android/platform/system/keymaster" />
+  <project path="system/media" name="android/platform/system/media" />
+  <project path="system/netd" name="android/platform/system/netd" />
+  <project path="system/security" name="android/platform/system/security" />
+  <project path="tools/external/fat32lib" name="android/platform/tools/external/fat32lib" revision="rel-st8-l-r3" />
+  <project path="tools/external/gradle" name="android/platform/tools/external/gradle" />
+
+  <project path="vendor/nvidia/build" name="android/platform/vendor/nvidia/build" revision="rel-st8-l-r3" />
+  <project path="external/alsa-lib" name="android/platform/external/alsa-lib" revision="rel-st8-l-r3" />
+  <project path="vendor/nvidia/licensed-binaries" name="tegra/prebuilts-licensed-binary-tlk-shieldtablet"/>
+
+  <project path="kernel" name="android-linux-3.10" remote="nvidia" revision="jtk1-android-l" />
+  <project path="device/nvidia" name="android-prebuilts-device-nvidia" remote="nvidia" revision="jtk1-android-l"/>
+  <project path="system/vold" name="android-system-vold" remote="nvidia" revision="jtk1-android-l"/>
+  <project path="frameworks/base" name="android-framework-base" remote="nvidia" revision="jtk1-android-l"/>
+  <project path="frameworks/opt/net/wifi" name="android-framework-opt-net-wifi" remote="nvidia" revision="jtk1-android-l"/>
+
+</manifest>
