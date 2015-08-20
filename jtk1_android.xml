@@ -425,10 +425,11 @@
   <project path="tools/external/fat32lib" name="android/platform/tools/external/fat32lib" revision="rel-st8-l-r3" />
   <project path="tools/external/gradle" name="android/platform/tools/external/gradle" />
 
-  <project path="vendor/nvidia/build" name="android/platform/vendor/nvidia/build" revision="rel-st8-l-r3" />
   <project path="external/alsa-lib" name="android/platform/external/alsa-lib" revision="rel-st8-l-r3" />
   <project path="vendor/nvidia/licensed-binaries" name="tegra/prebuilts-licensed-binary-tlk-shieldtablet"/>
 
+  <project path="vendor/nvidia/build" name="android-platform-vendor-nvidia-build" remote="nvidia" revision="jtk1-android-l" />
+  <project path="3rdparty/u-boot" name="android-3rdparty-u-boot" remote="nvidia" revision="jtk1-android-l" />
   <project path="kernel" name="android-linux-3.10" remote="nvidia" revision="jtk1-android-l" />
   <project path="device/nvidia" name="android-prebuilts-device-nvidia" remote="nvidia" revision="jtk1-android-l"/>
   <project path="system/vold" name="android-system-vold" remote="nvidia" revision="jtk1-android-l"/>
