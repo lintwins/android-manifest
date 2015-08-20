@@ -22,6 +22,9 @@ HowTo Build:
 Building this release requires a Linux build environment configured to
 build Android: http://source.android.com/source/initializing.html
 
+As to u-boot compiling, you should have device-tree-compiler upgraded to dtc
+1.4 or newer
+
 Additionally, you will be required to agree to license terms when extracting
 the binary drivers.
 
