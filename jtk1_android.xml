@@ -7,7 +7,7 @@
 
   <remote  name="nvidia"
            revision="jtk1-android-l"
-           fetch=".." />
+           fetch="https://github.com/NVIDIA" />
 
   <default revision="rel-st8-l-r3-partner"
            remote="nvidia_st8_oss" />
