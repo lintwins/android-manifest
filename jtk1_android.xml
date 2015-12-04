@@ -10,7 +10,7 @@
            fetch="https://github.com/NVIDIA" /-->
   <remote  name="nvidia"
            revision="jtk1-android-l"
-           fetch="git://nv-tegra.nvidia.com/gitweb" />
+           fetch="git://nv-tegra.nvidia.com/" />
 
   <default revision="rel-st8-l-r3-partner"
            remote="nvidia_st8_oss" />
