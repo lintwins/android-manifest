@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="nvidia_st8_oss"
-           fetch="git://nv-tegra.nvidia.com/"
+           fetch="git://nv-tegra.nvidia.com/gitweb"
            review="git-master.nvidia.com/r"
            revision="rel-st8-l-r3-partner" />
 
